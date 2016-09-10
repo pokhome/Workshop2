@@ -1,39 +1,38 @@
-CakePHP
-=======
+# Hey guys, !!!
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+สำหรับทุกคนที่ clone โปรเจ็คในครั้งแรก ให้ทำการตั้งค่าพื้นฐานดังต่อไปนี้
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+## การเริ่มต้นโปรเจ็ค
 
-Some Handy Links
-----------------
+เมื่อ clone โปรเจ็คมาแล้ว โปรดสร้างไฟล์ app\Config\database.php เพื่อใช้เชื่
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+class DATABASE_CONFIG {
 
-[Cookbook](http://book.cakephp.org) - THE Cake user documentation; start learning here!
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+				'persistent' => false,
+				'host' => 'localhost',
+				'login' => 'root',
+				'password' => 'root',
+				'database' => 'cake1',
+				'prefix' => '',
+				//'encoding' => 'utf8'
+    );
+}
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+สร้างโฟลเดอร์ app\tmp\ โดยมีโครงสร้างโฟลเดอร์ดังนี้
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+app\tmp\cache\models
 
-[API](http://api.cakephp.org) - A reference to Cake's classes
+app\tmp\cache\persistent
 
-[CakePHP TV](http://tv.cakephp.org) - Screen casts from events and video tutorials
+app\tmp\cache\views
 
-[The Cake Software Foundation](http://cakefoundation.org/) - promoting development related to CakePHP
+app\tmp\logs
 
-Get Support!
-------------
+app\tmp\sessions
 
-[Our Google Group](http://groups.google.com/group/cake-php) - community mailing list and forum
+app\tmp\tests
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake.
 
-[Q & A](http://ask.cakephp.org/) - Ask questions here, all questions welcome
-
-[Lighthouse](http://cakephp.lighthouseapp.com/) - Got issues? Please tell us!
-
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
+=================== ขอให้สนุกกับการทำโปคเจ็ค ^^ ==========================
